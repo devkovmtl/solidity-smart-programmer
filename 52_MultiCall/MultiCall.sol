@@ -3,6 +3,7 @@ pragma solidity ^0.8.13;
 
 // We want to make query to a contract call multiple times.
 // call multiple function 
+// Aggregate multiple query into single function call multicall
 contract TestMultiCall {
     function func1() external view returns (uint, uint) {
         return (1, block.timestamp);
